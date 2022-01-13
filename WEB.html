@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    body, html {
+  height: 100%;
+  margin: 0;
+}
+.button {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+}
+
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.button2 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;
+}
+
+.button2:hover {
+  background-color: #008CBA;
+  color: white;
+}
+.bg {
+
+background-image: url("https://images.pexels.com/photos/1631677/pexels-photo-1631677.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.font{
+
+font-size:30px;
+font-family:verdana;
+}
+</style>
+</head>
+<body>
+
+
+<div class="bg">
+    <br>
+   <center><h1>Indian Sign Language</h1> 
+    <form method="get">
+        <label for="ISL"><h2>SEARCH THE SIGN LANGUAGE :</h2></label>
+        <input type="list" value="" id="ISL" onchange="openPage()">
+        <datalist id="ISL">
+          <option value="WIPE" >
+          <option value="VOLLEY BALL">
+          <option value="WEIGH ">
+          <option value="SEMISOLID">
+          <option value="VALUABLE CONSIDERATION">
+        </datalist>
+        <input type="submit"> <br><br><br><br><br><br><br><br><br>
+        <center><H3>THE  INDIAN SIGN LANGUAGES VIDEOS (BOTH VISUAL AND ANIMATED)  </H3>  
+        <div class="font"><br>
+        <center><ol ></center>
+          <li >WIPE</li>
+          <li>WEIGH</li>
+          <li>VALUABLE CONSIDERATION</li>
+          <li>SEMISOLID</li>
+          <li>VOLLEY BALL</li>
+        </ol></center>
+      </div>
+      </form></center> 
+
+
+      
+</div>
+<script>
+    function openPage() {
+        var x = document.getElementById("ISL").value;
+
+        if (x === "WIPE") {
+            window.open("wipe.html","_self");
+        } else  if (x === "VOLLEY BALL") {
+            window.open("vb.html","_self");
+        } else  if (x === "WEIGH") {
+            window.open("weigh.html","_self");
+        } else if (x === "SEMISOLID") {
+            window.open("semisolid.html","_self");
+        }else if (x === "VALUABLE CONSIDERATION","_self") {
+            window.open("vc.html","_self");
+        } else { window.open("/index.html","_self");}
+    }
+</script>
+</body>
+
+</body>
+</html>
